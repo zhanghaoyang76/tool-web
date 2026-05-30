@@ -17,11 +17,10 @@ import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
 
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();
-const version = config.app.version;
-const commitSha = config.app.lastCommitSha.slice(0, 7);
 
 const { tracker } = useTracker();
 const { t } = useI18n();
+const showSponsor = ref(false);
 
 const toolStore = useToolStore();
 const { favoriteTools, toolsByCategory } = storeToRefs(toolStore);
@@ -59,33 +58,6 @@ const tools = computed<ToolCategory[]>(() => [
 
         <CollapsibleToolMenu :tools-by-category="tools" />
 
-        <div class="footer">
-          <div>
-            IT-Tools
-
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
-              v{{ version }}
-            </c-link>
-
-            <template v-if="commitSha && commitSha.length > 0">
-              -
-              <c-link
-                target="_blank"
-                rel="noopener"
-                type="primary"
-                :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
-              >
-                {{ commitSha }}
-              </c-link>
-            </template>
-          </div>
-          <div>
-            © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
-              Corentin Thomasset
-            </c-link>
-          </div>
-        </div>
       </div>
     </template>
 
@@ -123,18 +95,23 @@ const tools = computed<ToolCategory[]>(() => [
         <c-tooltip position="bottom" :tooltip="$t('home.support')">
           <c-button
             round
-            href="https://www.buymeacoffee.com/cthmsst"
-            rel="noopener"
-            target="_blank"
             class="support-button"
             :bordered="false"
-            @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
+            @click="() => { showSponsor = true; tracker.trackEvent({ eventName: 'Support button clicked' }); }"
           >
             {{ $t('home.buyMeACoffee') }}
             <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
           </c-button>
         </c-tooltip>
       </div>
+
+      <n-modal v-model:show="showSponsor">
+        <div class="sponsor-modal">
+          <h3>扫码赞助</h3>
+          <img src="/images/receive-QRcode.jpg" alt="收款码" class="sponsor-qr-code">
+        </div>
+      </n-modal>
+
       <slot />
     </template>
   </MenuLayout>
@@ -165,11 +142,20 @@ const tools = computed<ToolCategory[]>(() => [
   }
 }
 
-.footer {
+.sponsor-modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-  color: #838587;
-  margin-top: 20px;
-  padding: 20px 0;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.sponsor-qr-code {
+  width: 250px;
+  max-width: 70vw;
 }
 
 .sider-content {

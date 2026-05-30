@@ -29,21 +29,17 @@ home:
     mode: 'Chuyển đổi chế độ tối/sáng'
 about:
   content: >
-    # Về IT-Tools
-
-    Website tuyệt vời này, được tạo ra bằng ❤ bởi [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about), tổng hợp các công cụ hữu ích cho nhà phát triển và những người làm việc trong lĩnh vực IT. Nếu bạn thấy nó hữu ích, xin đừng ngần ngại chia sẻ cho những người mà bạn nghĩ sẽ thấy nó hữu ích và đừng quên đánh dấu nó trong thanh lối tắt của bạn!
-
-    IT Tools là mã nguồn mở (dưới giấy phép GPL-3.0) và miễn phí, và sẽ luôn như vậy, nhưng tôi phải trả tiền để lưu trữ và gia hạn tên miền. Nếu bạn muốn hỗ trợ công việc của tôi, và khích lệ tôi thêm nhiều công cụ hơn, hãy xem xét hỗ trợ bằng cách [tài trợ cho tôi](https://www.buymeacoffee.com/cthmsst).
+    # Giới thiệu về IT-Tools
 
     ## Công nghệ
 
-    IT Tools được tạo ra bằng Vue.js (Vue 3) với thư viện thành phần Naive UI và được lưu trữ và triển khai liên tục bởi Vercel. Các thư viện mã nguồn mở của bên thứ ba được sử dụng trong một số công cụ, bạn có thể tìm danh sách đầy đủ trong file [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) của kho lưu trữ.
+    IT-Tools được phát triển bằng Vue.js (Vue 3) và thư viện thành phần Naive UI, đồng thời được Vercel lưu trữ và triển khai liên tục. Một số công cụ sử dụng các thư viện mã nguồn mở của bên thứ ba. Bạn có thể tìm thấy danh sách đầy đủ trong tệp package.json của kho lưu trữ.
 
-    ## Phát hiện lỗi? Một công cụ bị thiếu?
+    ## Phát hiện lỗi? Thiếu công cụ?
 
-    Nếu bạn cần một công cụ hiện không có ở đây, và bạn nghĩ rằng nó có thể hữu ích, bạn được chào đón để gửi một yêu cầu tính năng trong [phần vấn đề](https://github.com/CorentinTh/it-tools/issues/new/choose) trong kho GitHub.
+    Nếu công cụ bạn cần hiện chưa có ở đây và bạn cho rằng nó có thể hữu ích, vui lòng gửi yêu cầu tính năng mới trong kho lưu trữ GitHub.
 
-    Và nếu bạn phát hiện ra một lỗi, hoặc điều gì đó không hoạt động như mong đợi, xin vui lòng gửi báo cáo lỗi trong [phần vấn đề](https://github.com/CorentinTh/it-tools/issues/new/choose) trong kho GitHub.
+    Nếu bạn phát hiện lỗi, hoặc có điều gì đó không hoạt động như mong đợi, vui lòng gửi báo cáo lỗi trong kho lưu trữ GitHub.
 
 404:
   notFound: '404 Không Tìm Thấy'

@@ -31,19 +31,15 @@ about:
   content: >
     # Om IT-Tools
 
-    Denne vidunderlige nettsiden, laget med ❤ av [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) , sammenstiller nyttige verktøy for utviklere og folk som jobber innen IT. Hvis du finner dette nyttig, Del det gjerne med andre som du tror kan få nytte av dette, og ikke glem å lage et bokmerke!
-
-    IT Tools er åpen kildekode (under GPL-3.0 lisensen) og gratis, og det vil det alltid være, men det koster å drifte og å fornye domenet. Hvis du ønsker å støtte arbeidet mitt, og motivere meg til å legge til flere verktøy, gjerne støtt meg ved å [sponse meg](https://www.buymeacoffee.com/cthmsst).
-
     ## Teknologier
 
-    IT Tools er laget i Vue.js (Vue 3) med Naive UI komponent bibliotektet og er hosted og kontinuerlig deployet av Vercel. Tredjeparts åpen-kildekode biblioteker er brukt i noen verktøy, du kan finne den komplette listen i [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) filen i depoet.
+    IT-Tools er utviklet med Vue.js (Vue 3) og komponentbiblioteket Naive UI, og hostes og distribueres kontinuerlig av Vercel. Noen verktøy bruker tredjepartsbiblioteker med åpen kildekode. Du finner den komplette listen i package.json-filen i repositoriet.
 
-    ## Funnet en feil? Et verktøy som mangler?
+    ## Funnet en feil? Mangler et verktøy?
 
-    Hvis du trenger et verktøy som foreløpig ikke er tilgjengelig her, og du tenker det kan være nyttig for andre, så er du velkommen til å legge til en funksjonsforespørsel i [problem seksjonen](https://github.com/CorentinTh/it-tools/issues/new/choose) i github-depotet.
+    Hvis verktøyet du trenger ikke er tilgjengelig her ennå, og du mener det kan være nyttig, kan du sende inn en forespørsel om ny funksjonalitet i GitHub-repositoriet.
 
-    Og hvis du har funnet en feil, eller noe ikke oppfører seg som forventet, vennligst send inn en feilrapport i [problem seksjonen](https://github.com/CorentinTh/it-tools/issues/new/choose) i github-depotet.
+    Hvis du finner en feil, eller noe ikke fungerer som forventet, kan du sende inn en feilrapport i GitHub-repositoriet.
 
 404:
   notFound: '404 ikke funnet'
