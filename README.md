@@ -106,4 +106,4 @@ pnpm run script:create:tool my-tool-name
 
 ## 声明
 
-本项目来自https://github.com/CorentinTh/it-tools，本人作为开发小白，抱着学习态度，想把项目复现以及增加新功能在自己的站点，感谢原作者的分享
+本项目来自[CorentinTh](https://github.com/CorentinTh/it-tools)，本人作为开发小白，抱着学习态度，想把项目复现以及增加新功能在自己的站点，感谢原作者的分享
